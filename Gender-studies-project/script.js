@@ -172,7 +172,6 @@ document.getElementById("forward").onclick = function(){
 			}
 		}
 	}
-	if 
 }
 
 var a = 0;
