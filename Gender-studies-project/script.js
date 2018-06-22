@@ -172,6 +172,7 @@ document.getElementById("forward").onclick = function(){
 			}
 		}
 	}
+	//if ()
 }
 
 var a = 0;
@@ -190,4 +191,3 @@ function playajs() {
 	var combataj = new Audio("aud/Alex 2.1.mp3");
 	combataj.play();
 }
-
