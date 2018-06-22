@@ -183,7 +183,7 @@ function ajs() {
 	var aj3 = new Audio("aud/Alex 6.mp3");
 	
 	var ajarr = [aj1, aj2, aj3];
-	var randajs = ajarr[Math.floor(Math.random() * ajarr.length];
+	var randajs = ajarr[Math.floor(Math.random() * ajarr.length)];
 	ajarr[a].play();
 }
 
