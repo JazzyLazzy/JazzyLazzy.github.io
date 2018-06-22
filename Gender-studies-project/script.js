@@ -172,19 +172,19 @@ document.getElementById("forward").onclick = function(){
 			}
 		}
 	}
+	if 
 }
 
 var a = 0;
 
 function ajs() {
 	var aj1 = new Audio("aud/Alex 1.mp3");
-	var aj2 = new Audio("aud/Alex 2.1.mp3");
-	var aj3 = new Audio("aud/Alex 3.mp3");
-	var aj4 = new Audio("aud/Alex 6.mp3");
+	var aj2 = new Audio("aud/Alex 3.mp3");
+	var aj3 = new Audio("aud/Alex 6.mp3");
 	
-	var ajarr = [aj1, aj2, aj3, aj4];
-	a = a + 1;
+	var ajarr = [aj1, aj2, aj3];
 	ajarr[a].play();
+	a = a + 1;
 	}
 
 function playajs() {

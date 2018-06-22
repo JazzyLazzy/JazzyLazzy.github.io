@@ -12,6 +12,23 @@ body {
 	border: 5px solid black;
 }
 
+#forward {
+	position: absolute;
+	background-color: white;
+	height: 30%;
+	width: 10%;
+	border-top-left-radius: 15%;
+	border-bottom-left-radius: 15%;
+	top: 35%;
+	right: 0;
+	opacity: 0.2;
+	z-index:100;
+}
+
+#forward:hover {
+	opacity: 0.7;
+}
+
 #alex_jones {
 	position: absolute;
 	display: block;
