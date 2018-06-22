@@ -1,0 +1,218 @@
+
+body {
+    background-color: #f0f8ff;
+}
+
+#container {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	height: 80%;
+	width: 80%;
+	border: 5px solid black;
+}
+
+#alex_jones {
+	position: absolute;
+	display: block;
+	left: 98%;
+}
+
+#showAJ {
+	display: block;
+	background-color: transparent;
+	position: absolute;
+	left: 95%;
+	z-index: 6;
+	color: red;
+}
+
+#AJ {
+	right:0;
+	top: 0;
+	position: absolute;
+	background-color: transparent;
+	z-index: 5;
+	transform: rotate(-45deg);
+	display: none;
+}
+
+#showAJ:hover ~#AJ {
+	display: block;
+}
+
+#welcome {
+	background-color: #f0f8ff;
+}
+
+#crash {
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-image: url(img/911.jpg);
+	background-size: 100% 100%;
+}
+
+#soiboi {
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-image: url(img/911.jpg);
+	background-size: 100% 100%;
+}
+
+#commman {
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-image: url(img/911.jpg);
+	background-size: 100% 100%;display: none;
+}
+
+#gather {
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-image: url(img/911.jpg);
+	background-size: 100% 100%;
+}
+
+.people1 {
+	z-index: 3;
+	position: absolute;
+	bottom: 0%;
+}
+
+#soiboisplit {
+	display: none;
+}
+
+#sbbar {
+	background-color: #f0f8ff;
+	width: 100%;
+	top: 324px;
+	position: absolute;
+	z-index: 3;
+}
+
+#barsholder {
+	position: absolute;
+	height: 75%;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-bottom: 5px solid #320000;
+}
+
+.soiboisplitbar {
+	width: 75px;
+	bottom: 0;
+	position: absolute;
+	height: 200px;
+	z-index: 2;
+	text-align: center;
+	font-size: 20pt;
+}
+
+#malehunt {
+	background-color: #ff6bff;
+	left: 100px;
+}
+
+#malehunt:hover {
+	background-color: #ff00ff;
+}
+
+#femalehunt {
+	background-color: #FF69B4;
+	left: 275px;
+}
+
+#femalehunt:hover {
+	background-color: #FF1493;
+}
+
+#malegath {
+	background-color: #ff6bff;
+	left: 550px;
+}
+
+#malegath:hover {
+	background-color: #ff00ff;
+}
+
+#femalegath {
+	background-color: #FF69B4;
+	left: 725px;
+}
+
+#femalegath:hover {
+	background-color: #FF1493;
+}
+
+#noresource {
+	display: none;
+}
+
+#malehunt2 {
+	background-color: #ff6bff;
+	z-index: 5;
+}
+
+#malehunt2:hover {
+	background-color: #ff00ff;
+}
+
+#femalehunt2 {
+	background-color: #FF69B4;
+	z-index: 4;
+}
+
+#femalehunt2:hover {
+	background-color: #FF1493;
+}
+
+#malegath2 {
+	background-color: #ff6bff;
+}
+
+#malegath2:hover {
+	background-color: #ff00ff;
+}
+
+#femalegath2 {
+	background-color: #FF69B4;
+}
+
+#femalegath2:hover {
+	background-color: #FF1493;
+}
+
+.starve {
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-image: url(img/venexuala.png);
+	background-size: 100% 100%;
+}
+
+.merica {
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-image: url(img/merica.jpeg);
+	background-size: 100% 100%;
+}
+
+#redpill {
+	display: none;
+	background-image: url(img/getredpilled.jpg);
+}
+
+#bad-jobs {
+	display: none;
+}
+
+#obama {
+	display: none;
+}
