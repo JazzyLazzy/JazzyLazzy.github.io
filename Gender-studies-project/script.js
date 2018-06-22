@@ -190,8 +190,7 @@ function ajs() {
 	
 	var ajarr = [aj1, aj2, aj3, aj4];
         a = a + 1;
-        alert(a);
-		ajarr[a].play();
+	ajarr[a].play();
 }
 
 function playajs() {
