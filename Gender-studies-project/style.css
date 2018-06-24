@@ -221,12 +221,25 @@ body {
 	background-size: 100% 100%;
 }
 
-#redpill {
+#bad-jobs {
 	display: none;
 }
 
-#bad-jobs {
+#redpill {
 	display: none;
+	background-image: url(img/getredpilled.png);
+	height: 100%;
+	width: 100%;
+	background-size: 100% 100%;
+}
+p.rptext {
+	font-size: 40pt; 
+	position: absolute;
+	text-align: center;
+}
+
+p#rptext1 {
+	top: 10%;
 }
 
 #obama {
