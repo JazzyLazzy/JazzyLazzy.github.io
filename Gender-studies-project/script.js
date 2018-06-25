@@ -20,15 +20,19 @@ var slidearr = [slide0, slide1, slide2, slide3, slide4, slide5, slide6, slide6$5
 var i = 0;
 
 var planecrash = new Audio("aud/747crash.mp3");
+var ussranthem = new Audio("aud/soviet-anthem.mp3");
 
-function pauseplanecrash() {
-	
-			if (slide2.style.display == "block") {
-				console.log("hi");
-				planecrash.pause();
+function pauseplanecrash() {	
+	if (slide2.style.display == "block") {
+		planecrash.pause();
+	}
+}
 
-			}
-		}
+function pauseussranthem() {
+	if (slide4.style.display == "block") {
+		ussranthem.pause();
+	}
+}
 
 function slideplays(){
 	if (slide0.style.display == "block") {
@@ -37,17 +41,9 @@ function slideplays(){
 	if (slide1.style.display == "block") {
 		document.getElementById("backward").style.display = "block";
 		planecrash.play();
-		pauseplanecrash();
 	}
 	if (slide3.style.display == "block") {
-		var ussranthem = new Audio("aud/soviet-anthem.mp3");
 		ussranthem.play();
-		window.addEventListener("keydown", stopanthem);
-		function stopanthem(e) {
-			if (e.keyCode == "32") {
-				ussranthem.pause();
-			}
-		}
 	}
 	if (slide4.style.display == "block") {
 		var p1move = document.getElementById("person1");
@@ -194,6 +190,8 @@ document.getElementById("forward").onclick = function() {
 	slidearr[i - 1].style.display = "none";
 	slidearr[i].style.display = "block";
 	slideplays();
+	pauseplanecrash();
+	pauseussranthem();
 }
 
 document.getElementById("backward").onclick = function() {
@@ -201,6 +199,8 @@ document.getElementById("backward").onclick = function() {
 	slidearr[i + 1].style.display = "none";
 	slidearr[i].style.display = "block";
 	slideplays();
+	pauseplanecrash();
+	pauseussranthem();
 }
 
 function ajs() {
