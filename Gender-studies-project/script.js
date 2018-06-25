@@ -14,19 +14,30 @@ var slide11 = document.getElementById("likepeter");
 var slide12 = document.getElementById("redpill");
 var slide13 = document.getElementById("obama");
 
+/*Oh! No JQuery? It is because JQuery is not necessary.*/
+
 var slidearr = [slide0, slide1, slide2, slide3, slide4, slide5, slide6, slide6$5, slide7, slide8, slide9, slide10, slide11, slide12, slide13];
 var i = 0;
 
-document.getElementById("forward").onclick = function(){
-	i = i + 1;
-	slidearr[i - 1].style.display = "none";
-	slidearr[i].style.display = "block";
-	if (slide1.style.display == "block") {
-		var planecrash = new Audio("aud/747crash.mp3");
-		planecrash.play();
-		if (slide2.style.display == "block"){
-			planecrash.pause();	
+var planecrash = new Audio("aud/747crash.mp3");
+
+function pauseplanecrash() {
+	
+			if (slide2.style.display == "block") {
+				console.log("hi");
+				planecrash.pause();
+
+			}
 		}
+
+function slideplays(){
+	if (slide0.style.display == "block") {
+		document.getElementById("backward").style.display = "none";
+	}
+	if (slide1.style.display == "block") {
+		document.getElementById("backward").style.display = "block";
+		planecrash.play();
+		pauseplanecrash();
 	}
 	if (slide3.style.display == "block") {
 		var ussranthem = new Audio("aud/soviet-anthem.mp3");
@@ -138,7 +149,7 @@ document.getElementById("forward").onclick = function(){
 			}
 		}  
 	}
-	if (slide10.style.display == "block"){
+	if (slide10.style.display == "block") {
 		var MAGA = new Audio("aud/MAGA.mp3");
 		MAGA.play();
 	}
@@ -168,14 +179,29 @@ document.getElementById("forward").onclick = function(){
 			}
 		}
 	}
-	if (slide13.style.display == "block"){
+	if (slide12.style.display == "block") {
+		document.getElementById("forward").style.display = "block";
+	}
+	if (slide13.style.display == "block") {
 		var obaama = new Audio("aud/obaama.mp3");
 		obaama.play();
 		document.getElementById("forward").style.display = "none";
 	}
 }
 
-var a = 0;
+document.getElementById("forward").onclick = function() {
+	i = i + 1;
+	slidearr[i - 1].style.display = "none";
+	slidearr[i].style.display = "block";
+	slideplays();
+}
+
+document.getElementById("backward").onclick = function() {
+	i = i - 1;
+	slidearr[i + 1].style.display = "none";
+	slidearr[i].style.display = "block";
+	slideplays();
+}
 
 function ajs() {
 	var aj1 = new Audio("aud/Alex 1.mp3");

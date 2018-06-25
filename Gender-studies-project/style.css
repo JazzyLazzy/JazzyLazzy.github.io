@@ -13,19 +13,29 @@ body {
 }
 
 #forward {
+	right: 0;
+	border-top-left-radius: 15%;
+	border-bottom-left-radius: 15%;
+}
+
+#backward {
+	left: 0;
+	display: none;
+	border-top-right-radius: 15%;
+	border-bottom-right-radius: 15%;	
+}
+
+.slidebuttons {
 	position: absolute;
 	background-color: white;
 	height: 30%;
 	width: 10%;
-	border-top-left-radius: 15%;
-	border-bottom-left-radius: 15%;
 	top: 35%;
-	right: 0;
 	opacity: 0.2;
 	z-index: 100;
 }
 
-#forward:hover {
+.slidebuttons:hover {
 	opacity: 0.7;
 }
 
@@ -125,7 +135,7 @@ body {
 	width: 75px;
 	bottom: 0;
 	position: absolute;
-	height: 400px;
+	height: 200px;
 	z-index: 2;
 	text-align: center;
 	font-size: 20pt;
@@ -239,7 +249,11 @@ p.rptext {
 }
 
 p#rptext1 {
-	top: 10%;
+	
+}
+
+p#rptext2 {
+	bottom: -5%;
 }
 
 #obama {
