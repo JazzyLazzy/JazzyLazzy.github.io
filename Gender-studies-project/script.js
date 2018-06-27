@@ -271,7 +271,7 @@ function showtxt() {
 	}
 }
 
-document.getElementById("forward").onclick = function() {
+function nextslide() {
 	i = i + 1;
 	slidearr[i - 1].style.display = "none";
 	slidearr[i].style.display = "block";
@@ -281,7 +281,7 @@ document.getElementById("forward").onclick = function() {
 	pauseussranthem();
 }
 
-document.getElementById("backward").onclick = function() {
+function prevslide() {
 	i = i - 1;
 	slidearr[i + 1].style.display = "none";
 	slidearr[i].style.display = "block";
@@ -290,6 +290,18 @@ document.getElementById("backward").onclick = function() {
 	pauseussranthem();
 	document.getElementById("crashplane").style.display = "block";
 	slide1.style.backgroundImage = "url('img/towers.jpg')";
+}
+
+window.addEventListener("keydown", next, false);
+window.addEventListener("keydown", back, false);
+
+function next(right) {
+	if (right.keyCode == 39) {
+		nextslide();
+	}
+	else if (right.keyCode == 37) {
+		prevslide();
+	}
 }
 
 function ajs() {
